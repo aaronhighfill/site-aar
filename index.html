@@ -3,9 +3,23 @@
 <html xmlns="http://www.w3.org/1999/xhtml"><head>
 
 
-<title>Aaron Highfill.com</title>
+    <title>Aaron Highfill.com</title>
 
-<meta http-equiv="content-type" content="text/html; charset=ISO-8859-1">
+    <meta http-equiv="content-type" content="text/html; charset=ISO-8859-1">
+
+    <script type="text/javascript">
+
+     function isMobileDevice() {
+         return (typeof window.orientation !== "undefined") || (navigator.userAgent.indexOf('IEMobile') !== -1);
+     };
+
+alert(isMobileDevice())
+     if (isMobileDevice() == true) {
+         document.location = "mobile.html";
+     }
+     //-->
+    </script>
+
 
 <style type="text/css">
 
