@@ -6,7 +6,7 @@
     box-sizing: border-box;
 }
 
-/* ============== Reset css styles ==================== */
+
 body {
     font: 20px/26px 'Open Sans', Helvetica, sans-serif;
     color: #333333;
@@ -17,10 +17,8 @@ body {
 
 .anchor {
     display: block;
-    height: 63px;
-    /* this is the height of your header */
-    margin-top: -63px;
-    /* this is again negative value of the height of your header */
+    height: 63px;    
+    margin-top: -63px;    
     visibility: hidden;
 }
 
@@ -158,7 +156,7 @@ img {
     margin-left: 0;
 }
 
-/* Main styles ========================= */
+
 
 
 header {
@@ -201,7 +199,6 @@ nav ul li a:hover {
 
 #pull {
     display: none;
-    /* background:url("data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAABQAAAAUCAYAAACNiR0NAAAAGXRFWHRTb2Z0d2FyZQBBZG9iZSBJbWFnZVJlYWR5ccllPAAAAyJpVFh0WE1MOmNvbS5hZG9iZS54bXAAAAAAADw/eHBhY2tldCBiZWdpbj0i77u/IiBpZD0iVzVNME1wQ2VoaUh6cmVTek5UY3prYzlkIj8+IDx4OnhtcG1ldGEgeG1sbnM6eD0iYWRvYmU6bnM6bWV0YS8iIHg6eG1wdGs9IkFkb2JlIFhNUCBDb3JlIDUuMC1jMDYwIDYxLjEzNDc3NywgMjAxMC8wMi8xMi0xNzozMjowMCAgICAgICAgIj4gPHJkZjpSREYgeG1sbnM6cmRmPSJodHRwOi8vd3d3LnczLm9yZy8xOTk5LzAyLzIyLXJkZi1zeW50YXgtbnMjIj4gPHJkZjpEZXNjcmlwdGlvbiByZGY6YWJvdXQ9IiIgeG1sbnM6eG1wPSJodHRwOi8vbnMuYWRvYmUuY29tL3hhcC8xLjAvIiB4bWxuczp4bXBNTT0iaHR0cDovL25zLmFkb2JlLmNvbS94YXAvMS4wL21tLyIgeG1sbnM6c3RSZWY9Imh0dHA6Ly9ucy5hZG9iZS5jb20veGFwLzEuMC9zVHlwZS9SZXNvdXJjZVJlZiMiIHhtcDpDcmVhdG9yVG9vbD0iQWRvYmUgUGhvdG9zaG9wIENTNSBNYWNpbnRvc2giIHhtcE1NOkluc3RhbmNlSUQ9InhtcC5paWQ6MjdGOUZCN0NBODM3MTFFM0EyRTRBOTU4MjcwQTQxQzAiIHhtcE1NOkRvY3VtZW50SUQ9InhtcC5kaWQ6MjdGOUZCN0RBODM3MTFFM0EyRTRBOTU4MjcwQTQxQzAiPiA8eG1wTU06RGVyaXZlZEZyb20gc3RSZWY6aW5zdGFuY2VJRD0ieG1wLmlpZDoyN0Y5RkI3QUE4MzcxMUUzQTJFNEE5NTgyNzBBNDFDMCIgc3RSZWY6ZG9jdW1lbnRJRD0ieG1wLmRpZDoyN0Y5RkI3QkE4MzcxMUUzQTJFNEE5NTgyNzBBNDFDMCIvPiA8L3JkZjpEZXNjcmlwdGlvbj4gPC9yZGY6UkRGPiA8L3g6eG1wbWV0YT4gPD94cGFja2V0IGVuZD0iciI/Po5FVesAAAA/SURBVHjaYvz//z8DNQGLiYkJVU1kYqAyGPwGsgAxIyUGnDlzZgh6maJkA0x2o8lmNNmMJhuSASO1qwCAAAMAmYsPxoMaUkIAAAAASUVORK5CYII=") no-repeat scroll 0 10px rgba(0, 0, 0, 0); */
     color: #333333;
     z-index: 110;
     position: fixed;
@@ -228,8 +225,7 @@ section {
     text-align: center;
     margin-top: 80px;
     padding: 130px 0;
-    color: White;
-    /* Adjust text color as needed */
+    color: White;    
     font-size: 60px;
     line-height: 60px;
     font-weight: bold;
@@ -332,7 +328,7 @@ section {
 }
 
 
-/* Contact form ========================= */
+
 
 .contactform {
     width: 100%;
@@ -386,7 +382,7 @@ input[type=button]:hover {
     -webkit-box-shadow: 0 5px 0 #008ce5;
 }
 
-/* Footer ========================= */
+
 
 footer {
     color: #666;
@@ -404,7 +400,6 @@ footer a:hover {
     color: #008ce5;
 }
 
-/* Responsive styles ========================= */
 
 @media screen and (max-width:1020px) {
     .wrap {
