@@ -1,34 +1,141 @@
+<!DOCTYPE html>
+<html xmlns="http://www.w3.org/1999/xhtml" lang="en" xml:lang="en">
 
-<!DOCTYPE HTML PUBLIC "-//W3C//DTD XHTML 1.0 Strict//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-strict.dtd">
-<html xmlns="http://www.w3.org/1999/xhtml"><head>
+<head>
+    <meta http-equiv="content-type" content="text/html; charset=utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content />
+    <meta name="keywords" content />
+    <link href="https://fonts.googleapis.com/css?family=Open+Sans:400,300,600,700,600italic" rel="stylesheet"
+        type="text/css">
+
+    <link rel="stylesheet" href="style.css">
+    <title>Aaron Highfill</title>
+</head>
+
+<body>
+    <header>
+        <div class="wrap">
+            <nav>
+                <ul id="top-menu">
+                    <li><a href="#proj">Projects</a></li>
+                    <li><a href="#about">About Me</a></li>
+                    <li><a href="#services">Certifications</a></li>
+                    <li><a href="#contact">Contact</a></li>
+                </ul>
+                <div id="pull">
+                    <span class="btn">Menu</span>
+                </div>
+            </nav>
+        </div>
+    </header>
+    <section id="home">        
+        Aaron Highfill is a Network Engineer
+    </section>
+
+    <span class="anchor" id="proj"></span>
+    <section id="proj">
+        <div class="wrap">
+            <h2>What I've been working on lately</h2>
+            <div class="col2 first" style="background-image: url('image/proj1.png');background-size: 115%;">
+                <p class="name">VMware SDWAN</p>
+                <p class="title">2023</p>
+            </div>
+
+            <div class="col2" style="background-image: url('image/proj2.png');background-size: 115%;">
+
+                <p class="name">Cisco QOS Redesign</p>
+                <p class="title">2023</p>
+            </div>
+
+            <div class="col2" style="background-image: url('image/proj3.png');background-size: 115%;">
+
+                <p class="name">Network Automation</p>
+                <p class="title">2022</p>
+            </div>
+        </div>
+    </section>
+    <span class="anchor" id="about"></span>
+    <section id="about">
+        <div class="wrap">
+            <h2>About me</h2>
+            <p>Greetings! I'm Aaron Highfill, a seasoned IT Engineer with a passion for designing, deploying and
+                maintaining networks.. Currently residing in Springfield, Missouri, I proudly am employed as a dedicated
+                Network Engineer at <a href="https://www.simmonsbank.com" rel="noreferrer">Simmons Bank</a>, bringing with
+                me a wealth of experience to Simmons for <span id="result"></span>. </p>
+
+            <p>Before joining the dynamic team at Simmons Bank, I honed my skills during a 15-year tenure at <a
+                    href="https://www.greatsouthernbank.com" rel="noreferrer">Great Southern Bank</a>, where I left
+                positive mark on the network infrastructure. </p>
+
+            <p>My journey in IT began at <a
+                    href="https://web.archive.org/web/20031015111926/http://www.zerus.com/">Zerus.com</a>, a prominent
+                PC component reseller, where I spent 9 beneficial years as an IT administrator. </p>
+
+            <p>But let's rewind a bit further—my career trajectory was set in motion during my formative years as an
+                intern, delving into the realms of programming within the research and development department at <a
+                    href="https://www.bloomberg.com/profile/company/0257134D:US">Fasco Industries</a>. </p>
 
 
-    <title>Aaron Highfill.com</title>
+            <script>
+                // Set the start date
+                var startDate = new Date(2022, 7, 25); // January 1, 1994
 
-    <meta http-equiv="content-type" content="text/html; charset=ISO-8859-1">
+                // Get the current date
+                var currentDate = new Date();
 
-<style type="text/css">
+                // Calculate the time difference in milliseconds
+                var timeDifference = currentDate - startDate;
 
-body {
-	background-color: #002b36;
-}
+                // Calculate years
+                var years = Math.floor(timeDifference / (365.25 * 24 * 60 * 60 * 1000));
 
-#mydiv {
-	position:absolute;
-	top: 50%;
-	left: 50%;
-	width:833px;
-	height:466px;
-	margin-top: -233px;
-	margin-left: -416.5px;
-	background-color: #002b36;
-}
+                // Calculate months
+                var months = Math.floor((timeDifference % (365.25 * 24 * 60 * 60 * 1000)) / (30.44 * 24 * 60 * 60 * 1000));
 
-</style>
+                // Display the result
+                // document.write('Years and Months since 1994: ' + years + ' years, ' + months + ' months');
 
-</head><body>
-<div id="mydiv">
-<img src="aaronhighfill.gif" alt="Cisco Certified Network Professional" title="Cisco Certified Network Professional">
+                // Determine the notation for years
+                var yearsNotation = (years === 1) ? 'year' : 'years';
 
-</div>
-</body></html>
+                document.getElementById('result').innerText = years + ' ' + yearsNotation + ' ' + months + ' months';
+            </script>
+
+            <div id="result"></div>
+
+        </div>
+    </section>
+    <span class="anchor" id="services"></span>
+    <section id="services">
+        <div class="wrap">
+            <h2>Certifications</h2>
+            <div class="certs">
+                <img src="image/certs.png" />
+            </div>
+
+
+        </div>
+    </section>
+    <span class="anchor" id="contact"></span>
+    <section id="contact">
+        <div class="wrap">
+            <h2>Contact Info</h2>
+            <div class="col5 first">
+                Aaron M. Highfill<br />
+                Springfield, MO<br /><br />
+                E-mail: aaron@aaronhighfill<b>.aaronhighfill</b>.com<br />
+                Linkedin.com/in/aaronhighfill<br />
+                Voicemail: <font face="Consolas">314-packet0</font><br />
+            </div>
+
+        </div>
+    </section>
+    <section>
+        <div class="wrap" id="promo">
+            <p>Want to time travel back in time?</p>
+            <a href="home.html" class="button">Yes, Let's go</a>
+        </div>
+    </section>
+
+</html>
