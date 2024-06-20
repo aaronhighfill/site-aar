@@ -1,0 +1,28 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg width="315px" height="316px" viewBox="0 0 315 316" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+    <!-- Generator: Sketch 63.1 (92452) - https://sketch.com -->
+    <title>wIPS Graphic</title>
+    <desc>Created with Sketch.</desc>
+    <g id="Desktop" stroke="none" stroke-width="1" fill="none" fill-rule="evenodd">
+        <g transform="translate(-642.000000, -1969.000000)" id="Blade-4">
+            <g transform="translate(0.000000, 1724.000000)">
+                <g id="wIPS" transform="translate(614.000000, 245.000000)">
+                    <g id="wIPS-Graphic" transform="translate(28.000000, 0.000000)">
+                        <path d="M157.5,316 L157.5,316 C70.4676724,316 0,245.308621 0,158 L0,158 C0,70.6913793 70.4676724,0 157.5,0 L157.5,0 C244.532328,0 315,70.6913793 315,158 L315,158 C315,245.308621 244.532328,316 157.5,316 Z" id="Path" fill="#F2F2F2" fill-rule="nonzero"></path>
+                        <g id="Group" transform="translate(109.000000, 150.000000)" stroke-linecap="round" stroke-width="8">
+                            <path d="M96.775,19.856 C70.3694444,-6.528 27.3583333,-6.528 0.952777778,19.856" id="Path" stroke="#FBAB2C"></path>
+                            <path d="M96.775,19.856 C70.3694444,-6.528 27.3583333,-6.528 0.952777778,19.856" id="Path" stroke="#AC7F37"></path>
+                            <path d="M96.775,19.856 C70.3694444,-6.528 27.3583333,-6.528 0.952777778,19.856" id="Path" stroke="#5C5342"></path>
+                            <path d="M96.775,19.856 C70.3694444,-6.528 27.3583333,-6.528 0.952777778,19.856" id="Path" stroke="#0D274D"></path>
+                            <path d="M80.85,35.36 C63.1555556,17.68 34.5722222,17.68 16.8777778,35.36" id="Path" stroke="#0D274D"></path>
+                            <path d="M64.925,50.864 C56.0777778,42.024 41.65,42.024 32.8027778,50.864" id="Path" stroke="#0D274D"></path>
+                            <path d="M49,66.368 C48.8638889,66.232 48.8638889,66.232 48.7277778,66.368" id="Path" stroke="#0D274D"></path>
+                        </g>
+                        <path d="M201,120 L201,88.9462366 C201,64.1577061 180.818182,44 156,44 C131.181818,44 111,64.1577061 111,88.9462366 L111,120" id="Path" stroke="#999999" stroke-width="10" stroke-linecap="round"></path>
+                        <path d="M215.05913,243 L98.9408696,243 C87.9530435,243 79,234.037037 79,223.037037 L79,141.962963 C79,130.962963 87.9530435,122 98.9408696,122 L215.05913,122 C226.046957,122 235,130.962963 235,141.962963 L235,223.037037 C235,234.037037 226.046957,243 215.05913,243 Z" id="Path" stroke="#FBAB2C" stroke-width="8" stroke-linecap="round"></path>
+                    </g>
+                </g>
+            </g>
+        </g>
+    </g>
+</svg>
