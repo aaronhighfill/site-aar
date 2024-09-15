@@ -105,7 +105,10 @@
                 // Determine the notation for years
                 var yearsNotation = (years === 1) ? 'year' : 'years';
 
-                document.getElementById('result').innerText = years + ' ' + yearsNotation + ' ' + months + ' months';
+                // Determine the notation for months
+                var monthsNotation = (months === 1) ? 'month' : 'months';
+
+                document.getElementById('result').innerText = years + ' ' + yearsNotation + ' ' + months + ' ' + monthsNotation;
             </script>
 
             <div id="result"></div>
