@@ -103,12 +103,17 @@
                 // document.write('Years and Months since 1994: ' + years + ' years, ' + months + ' months');
 
                 // Determine the notation for years
-                var yearsNotation = (years === 1) ? 'year' : 'years';
+                var yearsNotation = (years < 2) ? 'year' : 'years';
 
                 // Determine the notation for months
-                var monthsNotation = (months === 1) ? 'month' : 'months';
-
-                document.getElementById('result').innerText = years + ' ' + yearsNotation + ' ' + months + ' ' + monthsNotation;
+                var monthsNotation = (months < 2) ? 'month' : 'months';
+                
+                if (years < 1) {
+                    document.getElementById('result').innerText = months + ' ' + monthsNotation;
+                } else {
+                    document.getElementById('result').innerText = years + ' ' + yearsNotation + ' ' + months + ' ' + monthsNotation;                    
+                }
+                
             </script>
 
             <div id="result"></div>
