@@ -1,0 +1,123 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Auto Scrolling Projects</title>
+    <style>
+        body {
+            margin: 0;
+            padding: 0;
+            background: #111;
+            overflow: hidden;
+            color: white;
+            font-family: Arial, sans-serif;
+            position: relative;
+        }
+        .proj-container {
+            width: 100vw;
+            overflow-x: auto;
+            white-space: nowrap;
+            scroll-behavior: smooth;
+            padding: 20px 0;
+            position: relative;
+            display: flex;
+            align-items: center;
+        }
+        .proj-container::-webkit-scrollbar {
+            height: 10px;
+        }
+        .proj-container::-webkit-scrollbar-thumb {
+            background: #ff9800;
+            border-radius: 5px;
+        }
+        .proj-container::-webkit-scrollbar-track {
+            background: #222;
+        }
+        .scroll-content {
+            display: flex;
+            gap: 20px;
+            padding: 20px;
+            min-width: 2000px;
+            justify-content: center;
+        }
+        .col2 {
+            width: 300px;
+            height: 200px;
+            background-size: 115%;
+            background-position: center;
+            background-repeat: no-repeat;
+            border-radius: 10px;
+            display: flex;
+            flex-direction: column;
+            justify-content: flex-end;
+            padding: 10px;
+            box-shadow: 0 4px 6px rgba(0,0,0,0.3);
+        }
+        .name, .title {
+            background: rgba(0, 0, 0, 0.5);
+            padding: 5px;
+            border-radius: 5px;
+        }
+        .fade-effect {
+            position: absolute;
+            top: 0;
+            width: 100px;
+            height: 100%;
+            pointer-events: none;
+        }
+        .fade-left {
+            left: 0;
+            background: linear-gradient(to right, white, transparent);
+        }
+        .fade-right {
+            right: 0;
+            background: linear-gradient(to left, white, transparent);
+        }
+    </style>
+</head>
+<body>
+    <div class="proj-container" id="projContainer">
+        <div class="fade-effect fade-left"></div>
+        <div class="scroll-content">
+            <div class="col2" style="background-image: url('image/proj4.svg');">
+                <p class="name">Enterprise Wireless</p>
+                <p class="title">2024</p>
+            </div>
+            <div class="col2" style="background-image: url('image/proj1.png');">
+                <p class="name">VMware SDWAN </p>
+                <p class="title">2023</p>
+            </div>            
+            <div class="col2" style="background-image: url('image/proj2.png');">
+                <p class="name">Cisco QOS Redesign</p>
+                <p class="title">2023</p>
+            </div>
+        </div>
+        <div class="fade-effect fade-right"></div>
+    </div>
+    <script>
+        const projContainer = document.getElementById("projContainer");
+        let scrollAmount = 0;
+        let direction = 1; // 1 for right, -1 for left
+        let scrollInterval;
+
+        function autoScroll() {
+            projContainer.scrollLeft += 2 * direction;
+            scrollAmount += 2;
+            
+            if (projContainer.scrollLeft + projContainer.clientWidth >= projContainer.scrollWidth) {
+                direction = -1; // Reverse direction
+            } else if (projContainer.scrollLeft <= 0) {
+                direction = 1; // Change direction to forward
+            }
+        }
+
+        setTimeout(() => {
+            scrollInterval = setInterval(autoScroll, 30);
+        }, 8000); // Wait 8 seconds before starting scroll
+        
+        projContainer.addEventListener("mouseover", () => clearInterval(scrollInterval));
+        projContainer.addEventListener("mouseleave", () => scrollInterval = setInterval(autoScroll, 30));
+    </script>
+</body>
+</html>
