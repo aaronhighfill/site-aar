@@ -6,59 +6,60 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta name="description" content />
     <meta name="keywords" content />
-    
+
     <link href="https://fonts.googleapis.com/css?family=Open+Sans:400,300,600,700,600italic" rel="stylesheet"
         type="text/css">
 
     <link rel="stylesheet" href="style.css">
     <title>Aaron Highfill | Network Engineer</title>
     <style>
-      .col2 {
-    width: 500px;
-    height: 350px;
-    margin-left: 4%;
-    float: left;
-    box-shadow: inset 0px 0px 10px rgba(0, 0, 0, 0.9);
+        .col2 {
+            width: 500px;
+            height: 350px;
+            margin-left: 4%;
+            float: left;
+            box-shadow: inset 0px 0px 10px rgba(0, 0, 0, 0.9);
 
-}
-.proj-wrapper {
-    position: relative;
-    width: 100%;
-    overflow: hidden; /* Ensures no unwanted scrolling */
-}
+        }
 
-.proj-container {
-    width: 100%;
-    overflow-x: auto;
-    white-space: nowrap;
-    scroll-behavior: smooth;
-    padding: 20px 0;
-    display: flex;
-    align-items: center;
-}
+        .proj-wrapper {
+            position: relative;
+            width: 100%;
+            overflow: hidden;
+            /* Ensures no unwanted scrolling */
+        }
 
-.proj-wrapper::before,
-.proj-wrapper::after {
-    content: "";
-    position: absolute;
-    top: 0;
-    width: 50px; /* Adjust width for the fade effect */
-    height: 100%;
-    pointer-events: none;
-    z-index: 2;
-}
+        .proj-container {
+            width: 100%;
+            overflow-x: auto;
+            white-space: nowrap;
+            scroll-behavior: smooth;
+            padding: 20px 0;
+            display: flex;
+            align-items: center;
+        }
 
-.proj-wrapper::before {
-    left: 0;
-    background: linear-gradient(to right, white, rgba(255, 255, 255, 0));
-}
+        .proj-wrapper::before,
+        .proj-wrapper::after {
+            content: "";
+            position: absolute;
+            top: 0;
+            width: 50px;
+            /* Adjust width for the fade effect */
+            height: 100%;
+            pointer-events: none;
+            z-index: 2;
+        }
 
-.proj-wrapper::after {
-    right: 0;
-    background: linear-gradient(to left, white, rgba(255, 255, 255, 0));
-}
+        .proj-wrapper::before {
+            left: 0;
+            background: linear-gradient(to right, white, rgba(255, 255, 255, 0));
+        }
 
-        
+        .proj-wrapper::after {
+            right: 0;
+            background: linear-gradient(to left, white, rgba(255, 255, 255, 0));
+        }
     </style>
 </head>
 
@@ -88,70 +89,73 @@
             <h2>What I've been working on lately</h2>
 
             <div class="proj-wrapper">
-    <div class="proj-container" id="projContainer"
-    
-        <div class="scroll-content">
-            <div class="col2" style="background-image: url('image/proj8.png');background-size: 115%;">
-                <p class="name">Terraform Study   </p>
-                <p class="title">2025</p>
-            </div>            
-            <div class="col2" style="background-image: url('image/proj7.png');background-size: 115%;">
-                <p class="name">Cisco DevNet Study     </p>
-                <p class="title">2025</p>
-            </div>
+                <div class="proj-container" id="projContainer" <div class="scroll-content">
+                    <div class="col2" style="background-image: url('image/proj8.png');background-size: 115%;">
+                        <p class="name">Terraform Study </p>
+                        <p class="title">2025</p>
+                    </div>
+                    <div class="col2" style="background-image: url('image/proj7.png');background-size: 115%;">
+                        <p class="name">Cisco DevNet Study </p>
+                        <p class="title">2025</p>
+                    </div>
 
-            <div class="col2" style="background-image: url('image/proj6.svg');background-size: 115%;">
-                <p class="name">Azure Study     </p>
-                <p class="title">2025</p>
-            </div>
-            <div class="col2" style="background-image: url('image/proj5.png');background-size: 115%;">
-                <p class="name">ipprotocol.one <br> Website</p>
-                <p class="title">2024</p>
-            </div>
+                    <div class="col2" style="background-image: url('image/proj6.svg');background-size: 115%;">
+                        <p class="name">Azure Study </p>
+                        <p class="title">2025</p>
+                    </div>
+                    <div class="col2" style="background-image: url('image/proj5.png');background-size: 115%;">
+                        <p class="name">ipprotocol.one <br> Website</p>
+                        <p class="title">2024</p>
+                    </div>
 
-            <div class="col2" style="background-image: url('image/proj4.svg');background-size: 115%;">
-                <p class="name">Enterprise <br>Wireless</p>
-                <p class="title">2024</p>
-            </div>
-            <div class="col2" style="background-image: url('image/proj1.png');background-size: 115%;">
+                    <div class="col2" style="background-image: url('image/proj4.svg');background-size: 115%;">
+                        <p class="name">Enterprise <br>Wireless</p>
+                        <p class="title">2024</p>
+                    </div>
+                    <div class="col2" style="background-image: url('image/proj1.png');background-size: 115%;">
 
-                <p class="name">VMware <br> SDWAN </p>
-                <p class="title">2023</p>
-            </div>            
-            <div class="col2" style="background-image: url('image/proj2.png');background-size: 115%;">
+                        <p class="name">VMware <br> SDWAN </p>
+                        <p class="title">2023</p>
+                    </div>
+                    <div class="col2" style="background-image: url('image/proj2.png');background-size: 115%;">
 
-                <p class="name">Cisco QOS<br> Redesign</p>
-                <p class="title">2023</p>
+                        <p class="name">Cisco QOS<br> Redesign</p>
+                        <p class="title">2023</p>
+                    </div>
+
+                </div>
+
             </div>
-     
         </div>
-           
-        </div>
-    </div>
     </section>
     <span class="anchor" id="about"></span>
     <section id="about">
         <div class="wrap">
             <h2>About me</h2>
             <p>Greetings! I'm Aaron Highfill, a seasoned IT Engineer with a passion for designing, deploying and
-                maintaining networks. Currently residing in Springfield, Missouri, I proudly am employed as a dedicated
-                Network Engineer at <a href="https://www.simmonsbank.com" rel="noreferrer">Simmons Bank</a>, bringing
-                with
-                me a wealth of experience to Simmons for <span id="result"></span>. </p>
+                maintaining networks. Currently residing in Springfield, Missouri, I am proudly employed as a Senior
+                Network Engineer at <a href="https://www.arvestbank.com" rel="noreferrer">Arvest Bank</a>, where I am
+                excited to bring my experience to a new challenge.</p>
 
-            <p>Before joining the dynamic team at Simmons Bank, I honed my skills during a 15-year tenure at <a
-                    href="https://www.greatsouthernbank.com" rel="noreferrer">Great Southern Bank</a>, where I left
-                positive mark on the network infrastructure. </p>
+            <p>Before joining Arvest Bank, I served as a dedicated Network Engineer at
+                <a href="https://www.simmonsbank.com" rel="noreferrer">Simmons Bank</a> for 3 years and 6 months,
+                contributing my skills to their network infrastructure.
+            </p>
 
-            <p>My journey in IT began at <a
-                    href="https://web.archive.org/web/20031015111926/http://www.zerus.com/">Zerus.com</a>, a prominent
-                PC component reseller, where I spent 9 beneficial years as an IT administrator. </p>
+            <p>Prior to Simmons Bank, I honed my skills during a 15-year tenure at
+                <a href="https://www.greatsouthernbank.com" rel="noreferrer">Great Southern Bank</a>, where I left
+                a positive mark on the network infrastructure.
+            </p>
 
-            <p>But let's rewind a bit further, my career trajectory was set in motion during my formative years as an
-                intern, delving into the realms of programming within the research and development department at <a
-                    href="https://www.bloomberg.com/profile/company/0257134D:US">Fasco Industries</a>. </p>
+            <p>My journey in IT began at
+                <a href="https://web.archive.org/web/20031015111926/http://www.zerus.com/">Zerus.com</a>, a prominent
+                PC component reseller, where I spent 9 beneficial years as an IT administrator.
+            </p>
 
-
+            <p>But let's rewind a bit further — my career trajectory was set in motion during my formative years as an
+                intern, delving into the realms of programming within the research and development department at
+                <a href="https://www.bloomberg.com/profile/company/0257134D:US">Fasco Industries</a>.
+            </p>
             <script>
                 // Set the start date
                 var startDate = new Date(2022, 7, 25); // January 1, 1994
@@ -176,40 +180,40 @@
 
                 // Determine the notation for months
                 var monthsNotation = (months < 2) ? 'month' : 'months';
-                
+
                 if (years < 1) {
                     document.getElementById('result').innerText = months + ' ' + monthsNotation;
                 } else {
-                    document.getElementById('result').innerText = years + ' ' + yearsNotation + ' ' + months + ' ' + monthsNotation;                    
+                    document.getElementById('result').innerText = years + ' ' + yearsNotation + ' ' + months + ' ' + monthsNotation;
                 }
-                
+
             </script>
-  <script>
-    const projContainer = document.getElementById("projContainer");
-    let scrollAmount = 0;
-    let direction = 1; // 1 for right, -1 for left
+            <script>
+                const projContainer = document.getElementById("projContainer");
+                let scrollAmount = 0;
+                let direction = 1; // 1 for right, -1 for left
 
-    function autoScroll() {
-        projContainer.scrollLeft += 2 * direction;
-        scrollAmount += 2;
-        
-        if (projContainer.scrollLeft + projContainer.clientWidth >= projContainer.scrollWidth) {
-            direction = -1; // Reverse direction
-        } else if (projContainer.scrollLeft <= 0) {
-            direction = 1; // Change direction to forward
-        }
-    }
+                function autoScroll() {
+                    projContainer.scrollLeft += 2 * direction;
+                    scrollAmount += 2;
 
-    let scrollInterval = setInterval(autoScroll, 30);
-    
-    projContainer.addEventListener("mouseover", () => clearInterval(scrollInterval));
-    projContainer.addEventListener("mouseleave", () => scrollInterval = setInterval(autoScroll, 30));
+                    if (projContainer.scrollLeft + projContainer.clientWidth >= projContainer.scrollWidth) {
+                        direction = -1; // Reverse direction
+                    } else if (projContainer.scrollLeft <= 0) {
+                        direction = 1; // Change direction to forward
+                    }
+                }
 
-    // Center the images at start
-    //window.onload = function() {
-    //    projContainer.scrollLeft = (projContainer.scrollWidth - projContainer.clientWidth) / 2;
-    //};
-</script>
+                let scrollInterval = setInterval(autoScroll, 30);
+
+                projContainer.addEventListener("mouseover", () => clearInterval(scrollInterval));
+                projContainer.addEventListener("mouseleave", () => scrollInterval = setInterval(autoScroll, 30));
+
+                // Center the images at start
+                //window.onload = function() {
+                //    projContainer.scrollLeft = (projContainer.scrollWidth - projContainer.clientWidth) / 2;
+                //};
+            </script>
             <div id="result"></div>
 
         </div>
